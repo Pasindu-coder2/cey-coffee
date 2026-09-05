@@ -1,0 +1,726 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #3e2723;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 50px;
+    background-color: #482621;
+}
+
+
+/* Logo */
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation text */
+
+.nav-links a {
+    color: #f0c5bd;
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Navigation hover */
+
+.nav-links a:hover {
+    color: #d4a373;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+    
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+
+    color: #3e2723;
+
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+
+    color: #6f4e37;
+
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #6f4e37;
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #3e2723;
+}
+
+
+/* =========================
+   FEATURED PRODUCTS
+========================= */
+
+.featured {
+    padding: 60px 50px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+}
+
+.featured h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Product container */
+
+.products {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* Product card */
+
+.product {
+    width: 250px;
+
+    padding: 25px;
+
+    background-color: #f5ebe0;
+
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 60px 50px;
+
+    background-color: #482621;
+}
+
+.feature {
+    width: 220px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+
+    border-radius: 10px;
+}
+
+.feature h3 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 15px;
+}
+
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+}
+
+.testimonial h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+.review {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.stars {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.customer {
+    font-style: italic;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location {
+    display: flex;
+    justify-content: center;
+
+    gap: 100px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+}
+
+.location h2 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 10px;
+}
+
+.location p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background-color: #482621;
+
+    color: #f5e6d3;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 15px;
+}
+
+footer nav {
+    display: block;
+
+    padding: 0;
+
+    background-color: transparent;
+}
+
+footer nav a {
+    color: #f5e6d3;
+
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #d4a373;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: #f5e6d3;
+
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d4a373;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+}
+
+.about-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: #3e2723;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 20px;
+    color: #6f4e37;
+}
+
+
+/* =========================
+   OUR STORY
+========================= */
+
+.about-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 70px 50px;
+
+    background-color: #fffaf5;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #3e2723;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #6f4e37;
+
+    margin-bottom: 15px;
+}
+
+.about-image img {
+    width: 400px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.values {
+    padding: 70px 50px;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+}
+
+.values h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+
+    color: #3e2723;
+
+    margin-bottom: 35px;
+}
+
+.value-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.value {
+    width: 250px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.value h3 {
+    font-family: Georgia, serif;
+    color: #6f4e37;
+
+    margin-bottom: 10px;
+}
+
+.value p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   MENU HERO
+========================= */
+
+.menu-hero {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+}
+
+.menu-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: #3e2723;
+    margin-bottom: 10px;
+}
+
+.menu-hero p {
+    font-size: 20px;
+    color: #6f4e37;
+}
+
+
+/* =========================
+   MENU SECTIONS
+========================= */
+
+.menu-section {
+    padding: 60px 50px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+}
+
+.menu-section:nth-of-type(odd) {
+    background-color: #f5ebe0;
+}
+
+.menu-section h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #3e2723;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   MENU ITEMS
+========================= */
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.menu-item {
+    width: 280px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+
+    color: #6f4e37;
+
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    font-size: 18px;
+
+    color: #482621;
+}
+
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contact-hero {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #f5ebe0;
+}
+
+.contact-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: #3e2723;
+
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 20px;
+    color: #6f4e37;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    padding: 70px 50px;
+
+    background-color: #fffaf5;
+}
+
+
+/* Contact information */
+
+.contact-info {
+    width: 400px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+
+    color: #3e2723;
+
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 17px;
+    color: #6f4e37;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    width: 450px;
+
+    padding: 30px;
+
+    background-color: #f5ebe0;
+
+    border-radius: 10px;
+}
+
+
+/* Labels */
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #3e2723;
+
+    font-weight: bold;
+}
+
+
+/* Input and textarea */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #c9aaa0;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Message box */
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Send button */
+
+.contact-form button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #6f4e37;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+
+.contact-form button:hover {
+    background-color: #3e2723;
+}
